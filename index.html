@@ -1,1 +1,53 @@
 
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Deal Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="badge">Mini GitHub projekt</p>
+      <h1>Travel Deal Finder</h1>
+      <p>Jednoduchá aplikácia na filtrovanie dovolenkových ponúk podľa ceny, destinácie a odletového miesta.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="filters">
+      <select id="destinationFilter">
+        <option value="all">Všetky destinácie</option>
+        <option value="Egypt">Egypt</option>
+        <option value="Turecko">Turecko</option>
+        <option value="Grécko">Grécko</option>
+        <option value="Tunisko">Tunisko</option>
+      </select>
+
+      <select id="departureFilter">
+        <option value="all">Všetky odlety</option>
+        <option value="Bratislava">Bratislava</option>
+        <option value="Košice">Košice</option>
+        <option value="Poprad">Poprad</option>
+      </select>
+
+      <select id="sortFilter">
+        <option value="default">Odporúčané</option>
+        <option value="priceAsc">Najlacnejšie</option>
+        <option value="ratingDesc">Najlepšie hodnotené</option>
+      </select>
+
+      <label class="checkbox">
+        <input type="checkbox" id="allInclusiveFilter" />
+        Iba All Inclusive
+      </label>
+    </section>
+
+    <section id="deals" class="deals"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
