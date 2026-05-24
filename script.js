@@ -1,4 +1,3 @@
-
 const deals = [
   {
     hotel: "Sunny Beach Resort",
